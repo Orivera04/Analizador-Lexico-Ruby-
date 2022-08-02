@@ -1,0 +1,1227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>702</width>
+    <height>523</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>702</width>
+    <height>523</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Analizador Lexico</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>-10</y>
+      <width>721</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:white;
+border-style: solid;
+border-color: #e8e9eb;
+border-width:1px;
+box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>719</width>
+       <height>59</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>10</y>
+        <width>45</width>
+        <height>45</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(Console-100(1).png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>25</y>
+        <width>291</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(txtLexico.png);
+border:null</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>24</y>
+        <width>20</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(Forward-96(1).png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_14">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>20</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string extracomment="Abrir archivo">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Abrir&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>50</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(Open Folder-150.png);
+border : 0px;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>pushButton_14</zorder>
+     <zorder>pushButton_12</zorder>
+     <zorder>pushButton_13</zorder>
+     <zorder>pushButton_11</zorder>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>61</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:#33334c;
+border-color: rgb(44, 45, 50);
+border-style: outset;
+ border-width: 0px;
+box-shadow:0 1px 1px rgba(0, 0, 0, 0.5);</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>61</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>90</y>
+        <width>42</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(Sublime Text-96(1).png);
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-10</y>
+        <width>61</width>
+        <height>59</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#2cb8b9;;
+border-color:#c3c3c3;
+border-width:0px;
+
+
+
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>61</width>
+         <height>59</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_10">
+        <property name="geometry">
+         <rect>
+          <x>14</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(Ruby Gemstone-100.png);
+border-width:0px
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_29">
+      <property name="geometry">
+       <rect>
+        <x>-32</x>
+        <y>55</y>
+        <width>131</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(txtruby.png);
+border:null;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_12">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>63</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#253142;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_12">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>46</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <widget class="QScrollArea" name="scrollArea_13">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>41</y>
+          <width>62</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#253142;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_14">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>45</width>
+           <height>16</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_16">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-50</y>
+          <width>62</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#253142;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_17">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>45</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <widget class="QScrollArea" name="scrollArea_17">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>41</y>
+            <width>62</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:#253142;</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_18">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>45</width>
+             <height>16</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_14">
+      <property name="geometry">
+       <rect>
+        <x>58</x>
+        <y>80</y>
+        <width>11</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#2cb8b9;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_15">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>16</width>
+         <height>43</height>
+        </rect>
+       </property>
+       <widget class="QScrollArea" name="scrollArea_15">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>62</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#253142;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_16">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>45</width>
+           <height>16</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_18">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>62</width>
+        <height>3</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#253142;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_19">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>45</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <widget class="QScrollArea" name="scrollArea_19">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>41</y>
+          <width>62</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#253142;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_20">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>45</width>
+           <height>16</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_20">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-50</y>
+          <width>62</width>
+          <height>3</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#253142;</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_21">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>45</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <widget class="QScrollArea" name="scrollArea_21">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>41</y>
+            <width>62</width>
+            <height>3</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:#253142;</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_22">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>45</width>
+             <height>16</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <zorder>scrollArea_3</zorder>
+     <zorder>pushButton_7</zorder>
+     <zorder>pushButton_29</zorder>
+     <zorder>scrollArea_12</zorder>
+     <zorder>scrollArea_18</zorder>
+     <zorder>scrollArea_14</zorder>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_4">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>381</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:white;
+border-style: solid;
+border-color: #e8e9eb;
+border-width:1px</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>379</width>
+       <height>229</height>
+      </rect>
+     </property>
+     <widget class="QScrollArea" name="scrollArea_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>401</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#f05050;
+border:transparent;
+border-radious:10px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>401</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_15">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>4</y>
+          <width>200</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(txtruby.png);
+border:null</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>3</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(programming-code-signs(1).png);
+border : 0px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>401</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background:#f05050;
+border:transparent;
+border-radious:10px;
+</string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>401</width>
+           <height>35</height>
+          </rect>
+         </property>
+         <widget class="QPushButton" name="pushButton_19">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>4</y>
+            <width>81</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(txtcodigo.png);
+border:null</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>3</y>
+            <width>30</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">image: url(programming-code-signs(1).png);
+border : 0px</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>35</y>
+        <width>381</width>
+        <height>194</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string># Pon aqui el codigo</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>621</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:white;
+border-style: solid;
+border-color: #e8e9eb;
+border-width:1px</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_5">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>619</width>
+       <height>189</height>
+      </rect>
+     </property>
+     <widget class="QScrollArea" name="scrollArea_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>621</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#2cb8b9;
+border:transparent;
+border-radious:10px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>621</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_17">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>4</y>
+          <width>200</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(txttokens.png);
+border:null</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_18">
+        <property name="geometry">
+         <rect>
+          <x>12</x>
+          <y>6</y>
+          <width>25</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(Layers-100.png);
+border : 0px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTableWidget" name="mitabla">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>35</y>
+        <width>621</width>
+        <height>153</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="sortingEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_6">
+    <property name="geometry">
+     <rect>
+      <x>61</x>
+      <y>500</y>
+      <width>641</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: 	#8D89BB;
+border-style: solid;
+border-color:  	#8D89BB;
+border-width:1px</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>639</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>421</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white</string>
+      </property>
+      <property name="text">
+       <string notr="true">Creado por : Oscar Rivera , Yader Castillo , Christofer Gutierrez</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>0</y>
+        <width>251</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:white</string>
+      </property>
+      <property name="text">
+       <string>3T1 - CO</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_9">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>231</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:white;
+border-style: solid;
+border-color: #e8e9eb;
+border-width:1px;
+box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_9">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>229</width>
+       <height>229</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="pushButton_22">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>18</y>
+        <width>35</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string extracomment="Abrir archivo"/>
+      </property>
+      <property name="toolTipDuration">
+       <number>50</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(Open Folder-150.png);
+border : 0px;
+background:transparent</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QScrollArea" name="scrollArea_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>401</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#9792e3;
+border:transparent;
+border-radious:10px;
+</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>401</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <widget class="QPushButton" name="pushButton_21">
+        <property name="geometry">
+         <rect>
+          <x>32</x>
+          <y>4</y>
+          <width>200</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(Estadisticastxt.png);
+border:null</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_23">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>1</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">image: url(light-bulb.png);
+border : 0px</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>43</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(dry10.png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>43</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:0px</string>
+      </property>
+      <property name="text">
+       <string>Identificadores : 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:0px</string>
+      </property>
+      <property name="text">
+       <string>Operadores : 0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(dry2.png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:0px</string>
+      </property>
+      <property name="text">
+       <string>Reservadas : 0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_26">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(dry7.png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>160</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:0px</string>
+      </property>
+      <property name="text">
+       <string>Delimitadores : 0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_27">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(dry4.png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>198</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Light</family>
+        <pointsize>12</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width:0px</string>
+      </property>
+      <property name="text">
+       <string>Errores : 0</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_28">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>198</y>
+        <width>25</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(dry.png);
+border : 0px</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>702</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
